@@ -1,0 +1,9 @@
+SELECT count(*) from matches WHERE tournament_name IN (TOURNAMENT_LIST) AND home_team_name = 'TEAM' OR away_team_name = 'TEAM';
+SELECT count(*) AS Total_wins FROM matches WHERE tournament_name IN (TOURNAMENT_LIST) AND ((home_team_name = 'TEAM' AND result = 'home team win') OR (away_team_name = 'TEAM' AND result = 'away team win'));
+SELECT count(*) AS Total_lost FROM matches WHERE tournament_name IN (TOURNAMENT_LIST) AND ((home_team_name = 'TEAM' AND result = 'away team win') OR (away_team_name = 'TEAM' AND result = 'home team win'));
+SELECT count(*) AS Goals_Scored FROM goals WHERE tournament_name IN (TOURNAMENT_LIST) AND team_name = 'TEAM'",
+WITH player_appearances_count AS (SELECT player_id, family_name, given_name, COUNT(*) AS appearances FROM player_appearances WHERE tournament_name IN (TOURNAMENT_LIST) AND team_name = 'TEAM' GROUP BY player_id, family_name, given_name) SELECT player_id, family_name, given_name, appearances FROM player_appearances_count WHERE appearances = ( SELECT MAX(appearances) FROM player_appearances_count);
+WITH player_goals AS (SELECT player_id, family_name, given_name, COUNT(*) AS goals FROM goals WHERE tournament_name IN (TOURNAMENT_LIST) AND team_name = 'TEAM' GROUP BY player_id, family_name, given_name ) SELECT family_name, given_name, goals FROM player_goals WHERE goals = (SELECT MAX(goals) FROM player_goals);
+SELECT COUNT(*) AS no_of_semis FROM qualified_teams WHERE team_name = 'TEAM' AND (performance = 'final' OR performance = 'semi-finals');
+SELECT COUNT(*) AS no_of_semis FROM qualified_teams WHERE team_name = 'TEAM' AND performance = 'final';
+SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'TEAM';

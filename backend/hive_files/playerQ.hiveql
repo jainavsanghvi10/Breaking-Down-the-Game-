@@ -1,0 +1,20 @@
+SELECT birth_date from players WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
+SELECT 
+    CASE
+        WHEN goal_keeper = 1 THEN 'Goalkeeper'
+        WHEN defender = 1 THEN 'Defender'
+        WHEN midfielder = 1 THEN 'Midfielder'
+        WHEN forward = 1 THEN 'Forward'
+        ELSE 'Unknown'
+    END AS position
+FROM players
+WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
+
+SELECT count_tournaments from players WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
+SELECT count(*) from player_appearances WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
+
+SELECT count(*) from goals WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
+SELECT count(*) from players WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME' AND penalty = 1;
+
+
+

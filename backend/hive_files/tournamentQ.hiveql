@@ -1,0 +1,20 @@
+SELECT count(*) from matches WHERE tournament_name = TOURNAMENT;
+
+
+SELECT count(*) AS Goals_Scored FROM goals WHERE tournament_name = TOURNAMENT";
+
+SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Ball';
+
+SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Boot';
+
+SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Glove';
+
+SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Best Young Player';
+
+SELECT team_name, performance FROM host_countries WHERE tournament_name = TOURNAMENT;
+
+SELECT winner FROM tournaments WHERE tournament_name = TOURNAMENT;
+
+SELECT team_name FROM qualified_teams WHERE tournament_name = TOURNAMENT and performance = 'final';
+
+SELECT group_stage,second_group_stage,final_round,round_of_16,quarter_finals,semi_finals,third_place_match, final FROM tournaments WHERE tournament_name = TOURNAMENT;

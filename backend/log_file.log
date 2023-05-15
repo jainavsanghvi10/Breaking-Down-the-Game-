@@ -1,0 +1,48 @@
+INFO:pyhive.hive:USE `default`
+ERROR:root:[Errno 2] No such file or directory: '/home/yash/Desktop/Clg/6th_Sem/NoSQL/Endterm_Project/hive_files/output.hiveql'
+INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:13:35] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+ERROR:root:[Errno 2] No such file or directory: '/home/yash/Desktop/Clg/6th_Sem/NoSQL/Endterm_Project/hive_files/output.hiveql'
+INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:13:42] "GET /player?player=Botasso@Juan HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 447-373-981
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 447-373-981
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT 
+    CASE
+        WHEN goal_keeper = 1 THEN 'Goalkeeper'
+        WHEN defender = 1 THEN 'Defender'
+        WHEN midfielder = 1 THEN 'Midfielder'
+        WHEN forward = 1 THEN 'Forward'
+        ELSE 'Unknown'
+    END AS position
+FROM players
+WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:root:Executed query successfully
+INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:14:43] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT 
+    CASE
+        WHEN goal_keeper = 1 THEN 'Goalkeeper'
+        WHEN defender = 1 THEN 'Defender'
+        WHEN midfielder = 1 THEN 'Midfielder'
+        WHEN forward = 1 THEN 'Forward'
+        ELSE 'Unknown'
+    END AS position
+FROM players
+WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:root:Executed query successfully
+INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:15:27] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -

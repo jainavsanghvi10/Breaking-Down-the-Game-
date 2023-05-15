@@ -1,0 +1,16 @@
+SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel';
+SELECT 
+    CASE
+        WHEN goal_keeper = 1 THEN 'Goalkeeper'
+        WHEN defender = 1 THEN 'Defender'
+        WHEN midfielder = 1 THEN 'Midfielder'
+        WHEN forward = 1 THEN 'Forward'
+        ELSE 'Unknown'
+    END AS position
+FROM players
+WHERE family_name = 'Messi' AND given_name = 'Lionel';
+
+SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel';
+
+
+

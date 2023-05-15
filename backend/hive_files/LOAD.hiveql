@@ -1,0 +1,22 @@
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/awards.csv' INTO TABLE awards;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/award_winners.csv' INTO TABLE award_winners;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/confederations.csv' INTO TABLE confederations;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/groups.csv' INTO TABLE groups;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/group_standings.csv' INTO TABLE group_standings;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/host_countries.csv' INTO TABLE host_countries;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/penalty_kicks.csv' INTO TABLE penalty_kicks;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/players.csv' INTO TABLE players;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/qualified_teams.csv' INTO TABLE qualified_teams;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/stadiums.csv' INTO TABLE stadiums;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/teams.csv' INTO TABLE teams;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournaments.csv' INTO TABLE tournaments;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournament_stages.csv' INTO TABLE tournament_stages;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournament_standings.csv' INTO TABLE tournament_standings;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/goals.csv' INTO TABLE goals;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/bookings.csv' INTO TABLE bookings;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/team_appearances.csv' INTO TABLE team_appearances;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/substitutions.csv' INTO TABLE substitutions;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/squads.csv' INTO TABLE squads;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/player_appearances.csv' INTO TABLE player_appearances;
+LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/matches.csv' INTO TABLE matches;
+

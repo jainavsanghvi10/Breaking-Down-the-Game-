@@ -1,0 +1,5 @@
+
+SELECT count(*) from player_appearances WHERE family_name = 'Messi' AND given_name = 'Lionel';
+
+SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel';
+SELECT count(*) from players WHERE family_name = 'Messi' AND given_name = 'Lionel' AND penalty = 1;
