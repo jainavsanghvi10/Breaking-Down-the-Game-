@@ -74,12 +74,13 @@ const ExTable = (props) => {
 											fontWeight: '600',
 										}}>
 										{temp[i]}
+										{console.log(temp)}
 									</Typography>
 								</Box>
 							</Box>
 						</TableCell>
 						<TableCell align='right'>
-							<Typography variant='h6'>{row[0]}</Typography>
+							<Typography variant='h6'>{props.purpose==='player'?row[0]:row[0][0]}</Typography>
 						</TableCell>
 					</TableRow>
 				))}

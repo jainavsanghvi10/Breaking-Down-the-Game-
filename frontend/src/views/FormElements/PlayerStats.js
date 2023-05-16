@@ -38,15 +38,15 @@ const PlayerStats = () => {
 		const playerConcat = playerArray.join('@');
 		console.log(playerConcat);
 		const query = `player=${playerConcat}`;
-		console.log('http://localhost:8001/api?' + query);
-		// console.log('api called');
-		// const response = await axios.get('http://localhost:8001/api?' + query);
-		// console.log(response.data);
+		console.log('http://localhost:8001/player?' + query);
+		console.log('api called');
+		const response = await axios.get('http://localhost:8001/player?' + query);
+		console.log(response.data);
 		// setData(response.data);
-
+		let data2 = [[player], ...response.data]
 		//  uncomment the above lines to use the api and change data1 to data in the below lines
-		data1 = [[player], ...data1];
-		setData(data1);
+		// data = [[player], ...data];
+		setData(data2);
 		setDisplay(true);
 	};
 	const onClear = () => {

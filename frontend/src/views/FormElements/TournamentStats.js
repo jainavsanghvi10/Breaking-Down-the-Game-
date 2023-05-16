@@ -40,14 +40,13 @@ const TournamentStats = () => {
 		for (let i = 0; i < stat.length; i++) {
 			query += `&stat${i + 1}=${stat[i]}`;
 		}
-		console.log('http://localhost:8001/api?' + query);
-		// console.log('api called');
-		// const response = await axios.get('http://localhost:8001/api?' + query);
-		// console.log(response.data);
-		// setData(response.data);
+		console.log('http://localhost:8001/tournament?' + query);
+		console.log('api called');
+		const response = await axios.get('http://localhost:8001/tournament?' + query);
+		console.log(response.data);
 
 		//  uncomment the above lines to use the api and change the below line to setData(response.data)
-		setData(data1);
+		setData(response.data);
 		setDisplay(true);
 	};
 	const onClear = () => {
@@ -143,7 +142,7 @@ const TournamentStats = () => {
 										sm: 'unset',
 									},
 								}}>
-								<ExTable tableData={data} statsList={stat} />
+								<ExTable tableData={data} statsList={stat} purpose='tournament'/>
 							</Box>
 						</CardContent>
 					</Card>
