@@ -1,21 +1,179 @@
 INFO:pyhive.hive:USE `default`
-ERROR:root:[Errno 2] No such file or directory: '/home/yash/Desktop/Clg/6th_Sem/NoSQL/Endterm_Project/hive_files/output.hiveql'
-INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:13:35] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -
+INFO:pyhive.hive:SELECT count(*) from matches WHERE tournament_name = '1938 FIFA World Cup'
 INFO:pyhive.hive:USE `default`
-ERROR:root:[Errno 2] No such file or directory: '/home/yash/Desktop/Clg/6th_Sem/NoSQL/Endterm_Project/hive_files/output.hiveql'
-INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:13:42] "GET /player?player=Botasso@Juan HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '1938 FIFA World Cup' AND award_name = 'Golden Boot'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 17:16:41] "GET /tournament?year=1938&numStats=2&stat1=Total_matches&stat2=Golden_Boot HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
 INFO:werkzeug: * Restarting with watchdog (inotify)
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 447-373-981
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
-INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontendL/backend/functions.py', reloading
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
 INFO:werkzeug: * Restarting with watchdog (inotify)
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 447-373-981
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS Total_wins FROM matches WHERE tournament_name IN ('1934 FIFA World Cup', '1935 FIFA World Cup', '1936 FIFA World Cup', '1937 FIFA World Cup', '1938 FIFA World Cup', '1939 FIFA World Cup', '1940 FIFA World Cup', '1941 FIFA World Cup', '1942 FIFA World Cup', '1943 FIFA World Cup', '1944 FIFA World Cup', '1945 FIFA World Cup', '1946 FIFA World Cup', '1947 FIFA World Cup', '1948 FIFA World Cup', '1949 FIFA World Cup', '1950 FIFA World Cup') AND ((home_team_name = 'Argentina' AND result = 'home team win') OR (away_team_name = 'Argentina' AND result = 'away team win'))
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) from matches WHERE tournament_name IN ('1934 FIFA World Cup', '1935 FIFA World Cup', '1936 FIFA World Cup', '1937 FIFA World Cup', '1938 FIFA World Cup', '1939 FIFA World Cup', '1940 FIFA World Cup', '1941 FIFA World Cup', '1942 FIFA World Cup', '1943 FIFA World Cup', '1944 FIFA World Cup', '1945 FIFA World Cup', '1946 FIFA World Cup', '1947 FIFA World Cup', '1948 FIFA World Cup', '1949 FIFA World Cup', '1950 FIFA World Cup') AND home_team_name = 'Argentina' OR away_team_name = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 17:28:04] "GET /team?country=Argentina&startYear=1934&endYear=1950&numStats=2&stat1=Total_wins&stat2=Total_matches_played HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) from matches WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND home_team_name = 'Argentina' OR away_team_name = 'Argentina'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS Total_wins FROM matches WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND ((home_team_name = 'Argentina' AND result = 'home team win') OR (away_team_name = 'Argentina' AND result = 'away team win'))
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 17:29:54] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=Total_matches_played&stat2=Total_wins HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) from matches WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND home_team_name = 'Argentina' OR away_team_name = 'Argentina'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS Total_wins FROM matches WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND ((home_team_name = 'Argentina' AND result = 'home team win') OR (away_team_name = 'Argentina' AND result = 'away team win'))
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 17:36:39] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=Total_matches_played&stat2=Total_wins HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/functions.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:WITH player_appearances_count AS (SELECT player_id, family_name, given_name, COUNT(*) AS appearances FROM player_appearances WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND team_name = 'Argentina' GROUP BY player_id, family_name, given_name) SELECT player_id, family_name, given_name, appearances FROM player_appearances_count WHERE appearances = ( SELECT MAX(appearances) FROM player_appearances_count)
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 17:58:55] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=Most_appearances_by_a_player&stat2=No_of_World_Cup_Wins HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:WITH player_appearances_count AS (SELECT player_id, family_name, given_name, COUNT(*) AS appearances FROM player_appearances WHERE tournament_name IN ('2018 FIFA World Cup', '2019 FIFA World Cup', '2020 FIFA World Cup', '2021 FIFA World Cup', '2022 FIFA World Cup') AND team_name = 'Argentina' GROUP BY player_id, family_name, given_name) SELECT player_id, family_name, given_name, appearances FROM player_appearances_count WHERE appearances = ( SELECT MAX(appearances) FROM player_appearances_count)
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:15:52] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=Most_appearances_by_a_player&stat2=No_of_World_Cup_Wins HTTP/1.1" 200 -
 INFO:pyhive.hive:USE `default`
 INFO:pyhive.hive:SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
 INFO:pyhive.hive:SELECT 
@@ -29,8 +187,37 @@ INFO:pyhive.hive:SELECT
 FROM players
 WHERE family_name = 'Messi' AND given_name = 'Lionel'
 INFO:pyhive.hive:SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from player_appearances WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel' AND penalty = 1
 INFO:root:Executed query successfully
-INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:14:43] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:25:21] "GET /player?player=Messi@Lionel HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT COUNT(*) AS no_of_semis FROM qualified_teams WHERE team_name = 'Argentina' AND (performance = 'final' OR performance = 'semi-finals')
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:27:42] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=No_of_World_Cup_Wins&stat2=No_of_times_qualified_in_the_semis HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:33:17] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=1&stat1=No_of_World_Cup_Wins HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:35:41] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=1&stat1=No_of_World_Cup_Wins HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:36:53] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=1&stat1=No_of_World_Cup_Wins HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Boot'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Ball'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Glove'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:41:58] "GET /tournament?year=2022&numStats=3&stat1=Golden_Boot&stat2=Golden_Ball&stat3=Golden_Glove HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT COUNT(*) AS no_of_semis FROM qualified_teams WHERE team_name = 'Argentina' AND (performance = 'final' OR performance = 'semi-finals')
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 18:58:07] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=No_of_World_Cup_Wins&stat2=No_of_times_qualified_in_the_semis HTTP/1.1" 200 -
 INFO:pyhive.hive:USE `default`
 INFO:pyhive.hive:SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
 INFO:pyhive.hive:SELECT 
@@ -44,5 +231,69 @@ INFO:pyhive.hive:SELECT
 FROM players
 WHERE family_name = 'Messi' AND given_name = 'Lionel'
 INFO:pyhive.hive:SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from player_appearances WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel' AND penalty = 1
 INFO:root:Executed query successfully
-INFO:werkzeug:127.0.0.1 - - [15/May/2023 22:15:27] "GET /player?player=Cherro@Roberto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 19:33:16] "GET /player?player=Messi@Lionel HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Ball'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Glove'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Boot'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 19:34:32] "GET /tournament?year=2022&numStats=3&stat1=Golden_Ball&stat2=Golden_Glove&stat3=Golden_Boot HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Detected change in '/home/yash/Desktop/project/frontend2/backend/main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (inotify)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-956-791
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT birth_date from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT 
+    CASE
+        WHEN goal_keeper = 1 THEN 'Goalkeeper'
+        WHEN defender = 1 THEN 'Defender'
+        WHEN midfielder = 1 THEN 'Midfielder'
+        WHEN forward = 1 THEN 'Forward'
+        ELSE 'Unknown'
+    END AS position
+FROM players
+WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count_tournaments from players WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from player_appearances WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel'
+INFO:pyhive.hive:SELECT count(*) from goals WHERE family_name = 'Messi' AND given_name = 'Lionel' AND penalty = 1
+INFO:root:Executed query successfully
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 20:38:04] "GET /player?player=Messi@Lionel HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT count(*) AS World_cup_wins FROM tournaments WHERE winner = 'Argentina'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT COUNT(*) AS no_of_semis FROM qualified_teams WHERE team_name = 'Argentina' AND (performance = 'final' OR performance = 'semi-finals')
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 20:43:10] "GET /team?country=Argentina&startYear=2018&endYear=2022&numStats=2&stat1=No_of_World_Cup_Wins&stat2=No_of_times_qualified_in_the_semis HTTP/1.1" 200 -
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Ball'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Boot'
+INFO:pyhive.hive:USE `default`
+INFO:pyhive.hive:SELECT family_name, given_name FROM award_winners WHERE tournament_name = '2022 FIFA World Cup' AND award_name = 'Golden Glove'
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 20:46:27] "GET /tournament?year=2022&numStats=3&stat1=Golden_Ball&stat2=Golden_Boot&stat3=Golden_Glove HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (inotify)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 123-381-579
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 21:57:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/May/2023 21:57:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

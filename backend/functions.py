@@ -93,6 +93,7 @@ def execute_hive_file(file_path, cursor):
         if query:
             cursor.execute(query)
             results = cursor.fetchall()
+            print(results)
             result.append(results)
             # Process the query result or handle errors as needed
     return result
@@ -103,15 +104,21 @@ def query_player(query):
         print(query)
 
         names = query.split("@")
+        
+        if names[1] == "-":
+            names[1] = "not applicable"
+        
         print(names)
 
-        replace_word_in_file('/home/yash/Desktop/project/frontendL/backend/hive_files/playerQ.hiveql', '/home/yash/Desktop/project/frontendL/backend/hive_files/output.hiveql', 'FAMILY_NAME', names[0],'GIVEN_NAME', names[1])
-        file_path = "/home/yash/Desktop/project/frontendL/backend/hive_files/output.hiveql"
+
+        replace_word_in_file('/home/yash/Desktop/project/frontend2/backend/hive_files/playerQ.hiveql', '/home/yash/Desktop/project/frontend2/backend/hive_files/output.hiveql', 'FAMILY_NAME', names[0],'GIVEN_NAME', names[1])
+        file_path = "/home/yash/Desktop/project/frontend2/backend/hive_files/output.hiveql"
         res = execute_hive_file(file_path, cursor)
         # print(res)
         logging.info("Executed query successfully")
+        cursor.close()
         return res    
-    
+
     except Exception as e:
             logging.error(e)
 
@@ -134,7 +141,7 @@ def query_team(start_year, end_year, team_name, query):
         concatenated.append(concatenated_string)
 
     teams = {
-    "Total_matches_played":"SELECT count(*) from matches WHERE tournament_name IN (TOURNAMENT_LIST) AND home_team_name = 'TEAM' OR away_team_name = 'TEAM'",
+    "Total_matches_played":"SELECT count(*) from matches WHERE tournament_name IN (TOURNAMENT_LIST) AND (home_team_name = 'TEAM' OR away_team_name = 'TEAM')",
     "Total_wins":"SELECT count(*) AS Total_wins FROM matches WHERE tournament_name IN (TOURNAMENT_LIST) AND ((home_team_name = 'TEAM' AND result = 'home team win') OR (away_team_name = 'TEAM' AND result = 'away team win'))",
     "Total_losses":"SELECT count(*) AS Total_lost FROM matches WHERE tournament_name IN (TOURNAMENT_LIST) AND ((home_team_name = 'TEAM' AND result = 'away team win') OR (away_team_name = 'TEAM' AND result = 'home team win'))",
     "Total_goals_scored":"SELECT count(*) AS Goals_Scored FROM goals WHERE tournament_name IN (TOURNAMENT_LIST) AND team_name = 'TEAM'",
@@ -161,13 +168,13 @@ def query_tournament(year, query):
     phrase = "FIFA World Cup"
 
     concatenated = []   
-    concatenated_string = f"'{year} {phrase}'"
-    concatenated.append(concatenated_string)
+    years = f"'{year} {phrase}'"
+    # concatenated.append(years)
 
     tournament =  {
 	"Total_matches":
 		"SELECT count(*) from matches WHERE tournament_name = TOURNAMENT",
-	'Total_goals scored':
+	'Total_goals_scored':
 		"SELECT count(*) AS Goals_Scored FROM goals WHERE tournament_name = TOURNAMENT",
 	"Golden_Ball":
 		"SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Ball'",
@@ -175,9 +182,9 @@ def query_tournament(year, query):
 		"SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Boot'",
 	"Golden_Glove":
 		"SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Golden Glove'",
-	'Best Young Player':
+	'Best_Young_Player':
 		"SELECT family_name, given_name FROM award_winners WHERE tournament_name = TOURNAMENT AND award_name = 'Best Young Player'",
-	"Host_Country_and_it's_Performance":
+	"Host_Country_and_its_Performance":
 		"SELECT team_name, performance FROM host_countries WHERE tournament_name = TOURNAMENT",
 	"Winner_of_the_tournament":
 		"SELECT winner FROM tournaments WHERE tournament_name = TOURNAMENT",
@@ -187,16 +194,19 @@ def query_tournament(year, query):
 		"SELECT group_stage,second_group_stage,final_round,round_of_16,quarter_finals,semi_finals,third_place_match, final FROM tournaments WHERE tournament_name = TOURNAMENT",
     }
    
-    formatted_years = ', '.join(concatenated)
-    que = tournament[query].replace('TOURNAMENT', formatted_years)
+    # formatted_years = ', '.join(concatenated)
+    print(years)
+    que = tournament[query].replace('TOURNAMENT', years)
     print(que)
     
     cursor.execute(que)
     res = cursor.fetchall()
+    if res is None:
+        res = ["Not introduced"]
 
     return res
 
 # k = query_team("1930", "1935", "Argentina", "Total_matches_played")
-
+# k = query_player("neymar@-")
 # k = query_tournament("2022","Format_and_group_stage_team_information")
 # print(k)
