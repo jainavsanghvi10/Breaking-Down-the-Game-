@@ -14,7 +14,7 @@ SELECT count_tournaments from players WHERE family_name = 'FAMILY_NAME' AND give
 SELECT count(*) from player_appearances WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
 
 SELECT count(*) from goals WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME';
-SELECT count(*) from players WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME' AND penalty = 1;
+SELECT count(*) from goals WHERE family_name = 'FAMILY_NAME' AND given_name = 'GIVEN_NAME' AND penalty = 1;
 
 
 

@@ -12,11 +12,4 @@ LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/teams.csv' INTO 
 LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournaments.csv' INTO TABLE tournaments;
 LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournament_stages.csv' INTO TABLE tournament_stages;
 LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/tournament_standings.csv' INTO TABLE tournament_standings;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/goals.csv' INTO TABLE goals;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/bookings.csv' INTO TABLE bookings;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/team_appearances.csv' INTO TABLE team_appearances;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/substitutions.csv' INTO TABLE substitutions;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/squads.csv' INTO TABLE squads;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/player_appearances.csv' INTO TABLE player_appearances;
-LOAD DATA LOCAL INPATH '/home/yash/Desktop/project/backend/data/matches.csv' INTO TABLE matches;
 
