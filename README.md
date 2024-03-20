@@ -1,4 +1,4 @@
-# Breaking down the Game: A Football Analytics Platform
+# FootyMetrics: A Football Analytics Platform
 This repository contains the code for a football analytics platform that enables efficient processing and analysis of structured football data. The platform utilizes NoSQL technologies and provides valuable insights for teams, players, and fans.
 
 ## Instructions on How to Run
